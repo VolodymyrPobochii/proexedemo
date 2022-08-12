@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SomeApp</string>
+    <string name="descr_image">Item image</string>
+    <string name="no_data">No data</string>
+    <string name="action_search">Search</string>
+    <string name="user">User</string>
+    <string name="label_user_name">User Name: %s</string>
+    <string name="label_reputation">Reputation: %s</string>
+    <string name="label_top_tags">Top Tags: %s</string>
+    <string name="label_location">Location: %s</string>
+    <string name="label_create_date">Create Date: %s</string>
+    <string name="label_badges">Badges: %s</string>
+</resources>

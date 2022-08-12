@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/users_dest">
+
+    <include app:graph="@navigation/nav_graph_details" />
+
+    <fragment
+        android:id="@+id/users_dest"
+        android:name="com.pobochii.someapp.users.UsersFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/users_fragment">
+        <action
+            android:id="@+id/nav_to_user_details"
+            app:destination="@id/nav_graph_details"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right">
+            <argument
+                android:name="userId"
+                app:argType="integer"
+                app:nullable="false" />
+        </action>
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/user_details_dest"-->
+<!--        android:name="com.pobochii.someapp.userdetails.UserDetailsFragment"-->
+<!--        android:label="@string/user"-->
+<!--        tools:layout="@layout/user_details_fragment">-->
+<!--        <argument-->
+<!--            android:name="userId"-->
+<!--            app:argType="integer"-->
+<!--            app:nullable="false" />-->
+<!--    </fragment>-->
+</navigation>
